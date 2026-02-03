@@ -13,4 +13,8 @@ terraform {
    default_tags {
      tags = local.tags
    }
+
+   ignore_tags {
+    key_prefixes = [""]
+  }
  }
