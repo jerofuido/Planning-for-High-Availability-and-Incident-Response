@@ -20,6 +20,7 @@ resource "aws_iam_policy" "eks_cluster_role_cloudwatch_policy" {
    ]
 }
 POLICY
+  tags = {}
 }
 
  resource "aws_iam_policy" "eks_node_instance_policy" {
@@ -88,4 +89,7 @@ POLICY
    ]
 }
  EOF
+
+  tags = {}
+
  }
